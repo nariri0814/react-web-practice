@@ -10,9 +10,7 @@ function App() {
         <Header/>
       </header>
       <main>
-        <Main>
-
-        </Main>
+        <Main/>
       </main>
       <footer>
 

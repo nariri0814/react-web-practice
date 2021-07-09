@@ -4,7 +4,7 @@
   max-width: 1440px;
   margin: 0 auto;
   height: 700px;
-  /* padding: ; */
+  padding-bottom: 90px;
   box-sizing: border-box;
   overflow: hidden;
   position: relative;
@@ -21,13 +21,16 @@
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
   position: absolute;
   top: 0;
   left: 0;
 
-  opacity: 1;
-  transition: all 0.3s;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.slide_txt {
+  position: absolute;
+  z-index: 9;
 }
 .s_txt1 {
   font-size: 29px;
@@ -39,10 +42,13 @@
 }
 .main_slide img {
   width: 900px;
+  position: absolute;
+  right: 0;
 }
 .indi_box {
+  font-family: "Noto Sans KR", sans-serif;
   position: absolute;
-  bottom: 0;
+  bottom: 60px;
   left: 0;
 }
 .indi_box * {
@@ -53,8 +59,12 @@
   width: 80px;
   height: 3px;
   background: #134aa9;
-  margin: 10px 13px;
+  margin: 14px 10px;
+
+  display: none;
 }
 .indi_num {
   opacity: 0.4;
+  padding: 0 10px;
+  cursor: pointer;
 }

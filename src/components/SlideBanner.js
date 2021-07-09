@@ -1,24 +1,64 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import './SlideBanner.css'
 
 const SlideBanner = () => {
-    
-    
-    const [ state, setState ] = useState({opacity:1});
-
+    // const [ state, setState ] = useState(null);
 
     useEffect ( () => {
+        // const slide = document.querySelectorAll('.main_slide');
+// console.log(slide.length)
+        
+            // slide.forEach(banner => {
+            //     // console.log(banner)
+            //     setInterval( () => {
+            //         banner.style.opacity = 0;
+            //     }, 1000);
+            // })
 
-        const slide = document.querySelectorAll('.main_slide');
-        state.style.opacity=1;
-// console.log(slide)
-        setInterval( () => {
-            slide.forEach(banner => {
-                banner.style.opacity = 0;
-                // console.log(banner)
-            })
-            
-        }, 1000);
+            // function SlideClosure() {
+            //     const slide = document.querySelectorAll('.main_slide')
+            //     for(var i = 0; i < slide.length; i++) {
+            //         slide[i].style.opacity = 0.2;
+            //         // console.log(i)
+            //         (function(sl_i) { 
+            //             setInterval(function(){
+            //                 slide[sl_i].style.opacity = 1;
+            //                 console.log(sl_i)
+            //             }, 1000)
+            //         })(i)
+            //     }
+            // }
+            // SlideClosure()
+        
+        function Slide() {
+            let slide = document.getElementsByClassName('main_slide');
+            let indi_line = document.getElementsByClassName('indi_line');
+            let indi_num = document.getElementsByClassName('indi_num');
+
+            let sl_count = slide.length;
+            let curr_i = 0;
+            let opt = 0
+            let interval = '';
+            slide[0].style.opacity = 1;
+            indi_line[0].style.display = 'block';
+            indi_num[0].style.opacity = 1;
+            indi_num[0].style.fontWeight = '900';
+
+            interval = setInterval(() => {
+                slide[curr_i % sl_count].style.opacity = (-0.08 * opt);
+                slide[(curr_i + 1) % sl_count].style.opacity = (1 * (1 - opt));
+                
+                indi_line[curr_i % sl_count].style.display = 'none';
+                indi_line[(curr_i + 1) % sl_count].style.display = 'block';
+                indi_num[curr_i % sl_count].style.opacity = 0.4;
+                indi_num[curr_i % sl_count].style.fontWeight = '400';
+                indi_num[(curr_i + 1) % sl_count].style.opacity = 1;
+                indi_num[(curr_i + 1) % sl_count].style.fontWeight = '900';
+
+                curr_i++;
+            }, 2500);
+        }
+        Slide()
     },[]);
     
 

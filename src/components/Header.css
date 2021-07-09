@@ -39,7 +39,7 @@
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 9;
+  z-index: 11;
 
   display: none;
 }
@@ -74,6 +74,7 @@
   position: absolute;
   top: 100%;
   left: 0;
+  z-index: 10;
   /* padding: 120px; */
   box-sizing: border-box;
   background: #eff4fe;
