@@ -1,12 +1,13 @@
 .header {
-  width: 100%;
+  width: 1400px;
   height: 100px;
+  margin: 0 auto;
   color: #134aa9;
   text-align: center;
 
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   position: relative;
 }
 .logo {

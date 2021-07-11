@@ -23,19 +23,24 @@
   font-size: 24px;
   text-align: center;
   color: #2a2e35;
+  cursor: pointer;
 }
 .nav_li span {
   vertical-align: text-top;
   margin-left: 5px;
+  transform: translate(0px);
   transition: all 0.5s;
+  display: inline-block;
 }
 .nav_li:hover {
   color: #134aa9;
 }
 .nav_li:hover span {
-  padding-left: 15px;
+  /* padding-left: 15px; */
   /* color: #134aa9; */
+  transform: translate(10px);
 }
+/* ////////////////////////////////////////// */
 .education {
   width: 100%;
   height: 1000px;
@@ -82,6 +87,7 @@
 .month_arrow {
   font-size: 15px;
   margin: 4px;
+  cursor: pointer;
 }
 .month_num {
   font-family: "GmarketSansBold";
@@ -102,13 +108,70 @@
 .cad_day {
   width: 18px;
   height: 18px;
+  line-height: 18px;
   display: inline-block;
   padding: 10px;
-  line-height: 18px;
   text-decoration: underline;
+  font-size: 19px;
   cursor: pointer;
 }
 .today_ac {
   border: 1px solid #fff;
   border-radius: 50%;
+}
+
+.edu_slide_sec {
+  width: 100%;
+  height: 650px;
+  padding: 70px 0;
+  margin-top: 20px;
+  background: orange;
+  overflow: hidden;
+  position: relative;
+}
+.edu_slide_inner {
+  height: 100%;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translate(-50%);
+
+  display: flex;
+  flex-direction: row;
+}
+.edu_slide_box {
+  width: 308px;
+  height: 540px;
+  overflow: hidden;
+  margin: 15px;
+  background: palegoldenrod;
+  transition: all 0.5s;
+  /* position: absolute;
+  top: 70px; */
+}
+.edu_sl_img {
+  width: 100%;
+  height: 436px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.sl_desc {
+  margin-top: 10px;
+}
+.sl_desc1 span {
+  color: #00aceb;
+  font-size: 15px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+.sl_desc1 {
+  margin: 0;
+}
+.sl_desc2 {
+  font-size: 19px;
+  font-weight: 900;
+}
+
+.edu_box_ac {
+  transform: translateX(-308px);
 }

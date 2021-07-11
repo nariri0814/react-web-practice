@@ -9,21 +9,35 @@ const Education = () => {
     const [ totalDay, setTotalDay ] = useState(Array(new Date(DATA.getFullYear(), month, 0).getDate()).fill().map((v,i)=> i+1))
     const [ day, setDay ] = useState(DATA.getDate());
     
-    useEffect ( () => [
-        today[day-1].classList.add('today_ac')
-    ],[]);
-
     const today = document.getElementsByClassName('cad_day');
-    /////////////////////////////////
-    // const month_day = () => {
-    //     today.innerText = totalDay
-    // }
+    const inter = ""
+    
+    useEffect ( () => {
+        today[day-1].classList.add('today_ac')
+
+        //////////////////
+        function edu_slide() {
+            // const inter = ""
+            let edu_sl_box = document.getElementsByClassName('edu_slide_box')
+            let edu_count = edu_sl_box.length;
+            let edu_curr_i = 0;
+
+            let edu_box_width = edu_sl_box[0].offsetWidth
+            // console.log(edu_box_width)
 
 
-
-
-
-
+            // 특정번째 반대쪽 끝으로 이동
+            // function item_move() {
+            //     edu_sl_box[edu_curr_i % edu_count].style.transform = `translateX(${edu_box_width * (edu_count - 1)})`
+            // }
+            
+            setInterval(() => {
+                edu_sl_box[edu_curr_i % edu_count].style.transform = `translateX(-= ${edu_box_width}px)`
+                edu_curr_i ++;
+            }, 500)
+        }
+        edu_slide()
+    },[]);
 
 
 
@@ -48,7 +62,7 @@ const Education = () => {
                             <div className="month_num">{month}</div>
                             <div className="year_num">2021</div>
                         </div>
-                        <div className="month_arrow" onClick={month_day}><BsChevronRight/></div>
+                        <div className="month_arrow"><BsChevronRight/></div>
                     </div>
                     <div className="cad_day_box">
                         {totalDay.map((v,i)=><div key={i+1} className="cad_day">{i+1}</div>)}
@@ -58,13 +72,106 @@ const Education = () => {
                 </div>
             </div>
             <div className="edu_slide_sec">
-                <div className="edu_slide_box">
-                    <div className="edu_sl_img">
-                        {/* <img src="./img/pcFile_1620709446_0.png"/> */}
-                        <div className="sl_desc">
-                            <p><span>#교육</span>2021.01.31.~2021.12.31.</p>
-                            <p>나룰 수채화 드로잉</p>
-                        </div>
+                <div className="edu_slide_inner">
+
+                    <div className="edu_slide_box">
+                        <a href="#">
+                            <div className="edu_sl_img">
+                                <img src="./img/pcFile_1620709446_0.png"/>
+                            </div>
+                            <div className="sl_desc">
+                                <p className="sl_desc1"><span>#교육</span>2021.01.31.~2021.12.31.</p>
+                                <p className="sl_desc2">나룰 수채화 드로잉</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div className="edu_slide_box">
+                        <a href="#">
+                            <div className="edu_sl_img">
+                                <img src="./img/pcFile_1620709446_0.png"/>
+                            </div>
+                            <div className="sl_desc">
+                                <p className="sl_desc1"><span>#교육</span>2021.01.31.~2021.12.31.</p>
+                                <p className="sl_desc2">나룰 수채화 드로잉</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div className="edu_slide_box">
+                        <a href="#">
+                            <div className="edu_sl_img">
+                                <img src="./img/pcFile_1620709446_0.png"/>
+                            </div>
+                            <div className="sl_desc">
+                                <p className="sl_desc1"><span>#교육</span>2021.01.31.~2021.12.31.</p>
+                                <p className="sl_desc2">나룰 수채화 드로잉</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div className="edu_slide_box">
+                        <a href="#">
+                            <div className="edu_sl_img">
+                                <img src="./img/pcFile_1620709446_0.png"/>
+                            </div>
+                            <div className="sl_desc">
+                                <p className="sl_desc1"><span>#교육</span>2021.01.31.~2021.12.31.</p>
+                                <p className="sl_desc2">나룰 수채화 드로잉</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div className="edu_slide_box">
+                        <a href="#">
+                            <div className="edu_sl_img">
+                                <img src="./img/pcFile_1620709446_0.png"/>
+                            </div>
+                            <div className="sl_desc">
+                                <p className="sl_desc1"><span>#교육</span>2021.01.31.~2021.12.31.</p>
+                                <p className="sl_desc2">나룰 수채화 드로잉</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div className="edu_slide_box">
+                        <a href="#">
+                            <div className="edu_sl_img">
+                                <img src="./img/pcFile_1620709446_0.png"/>
+                            </div>
+                            <div className="sl_desc">
+                                <p className="sl_desc1"><span>#교육</span>2021.01.31.~2021.12.31.</p>
+                                <p className="sl_desc2">나룰 수채화 드로잉</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div className="edu_slide_box">
+                        <a href="#">
+                            <div className="edu_sl_img">
+                                <img src="./img/pcFile_1620709446_0.png"/>
+                            </div>
+                            <div className="sl_desc">
+                                <p className="sl_desc1"><span>#교육</span>2021.01.31.~2021.12.31.</p>
+                                <p className="sl_desc2">나룰 수채화 드로잉</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div className="edu_slide_box">
+                        <a href="#">
+                            <div className="edu_sl_img">
+                                <img src="./img/pcFile_1620709446_0.png"/>
+                            </div>
+                            <div className="sl_desc">
+                                <p className="sl_desc1"><span>#교육</span>2021.01.31.~2021.12.31.</p>
+                                <p className="sl_desc2">나룰 수채화 드로잉</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div className="edu_slide_box">
+                        <a href="#">
+                            <div className="edu_sl_img">
+                                <img src="./img/pcFile_1620709446_0.png"/>
+                            </div>
+                            <div className="sl_desc">
+                                <p className="sl_desc1"><span>#교육</span>2021.01.31.~2021.12.31.</p>
+                                <p className="sl_desc2">나룰 수채화 드로잉</p>
+                            </div>
+                        </a>
                     </div>
 
                 </div>
