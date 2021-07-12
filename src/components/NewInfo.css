@@ -1,0 +1,49 @@
+.new_info {
+  width: 100%;
+  overflow: hidden;
+  background: #eff4fe;
+  padding: 50px 0 100px;
+}
+.new_info_inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.new_tit h1 {
+  font-family: "GmarketSansBold";
+}
+.new_desc_sec {
+  width: 100%;
+  padding: 40px 0;
+  overflow: hidden;
+}
+.new_desc_box {
+  width: calc((100% - 40px) / 2);
+  margin: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #fff;
+  color: #acacac;
+  font-size: 18px;
+  font-weight: 700;
+  float: left;
+  cursor: pointer;
+}
+.new_desc_box p:nth-child(2) {
+  color: #222;
+}
+.new_desc_box p:nth-child(4) {
+  padding: 20px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+.new_plus {
+  float: right;
+  color: #222;
+  font-size: 30px !important;
+}
+.new_desc_box:hover {
+  transform: translateY(-20px);
+  transition: all 0.5s;
+  box-shadow: 0 0 20px 0 rgb(0, 0, 0, 0.2);
+}
