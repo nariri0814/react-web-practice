@@ -1,20 +1,24 @@
 import React from 'react';
-import Header from './components/Header';
-import Main from './components/Main';
+
 import './App.css';
+import Footer from './layout/Footer';
+import Header from './layout/Header';
+import Main from './page/home/template/Main';
+import Home from './page/home/Home';
 
 function App() {
   return (
     <div className="wrap">
-      <header>
+      <Home/>
+      {/* <header>
         <Header/>
       </header>
       <main>
         <Main/>
       </main>
       <footer>
-
-      </footer>
+        <Footer/>
+      </footer> */}
     </div>
   );
 }

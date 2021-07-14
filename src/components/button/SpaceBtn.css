@@ -1,0 +1,18 @@
+.sp_btn {
+  padding: 12px 15px;
+  margin-right: 10px;
+  color: #134aa9;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  background: inherit;
+  border: 2px solid #134aa9;
+  border-radius: 25px;
+  float: left;
+  flex-direction: row;
+}
+.sp_btn:hover {
+  background: #134aa9;
+  color: #fff;
+  transition: all 0.3s;
+}

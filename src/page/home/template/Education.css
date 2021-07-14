@@ -1,0 +1,168 @@
+.nav {
+  width: 1400px;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #eff4fe;
+  margin: 0 auto;
+  transform: translateY(-50%);
+}
+.nav_ul {
+  width: 100%;
+  overflow: hidden;
+  font-family: "GmarketSansBold";
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav_li {
+  width: calc((100% - 1px) / 4);
+  padding: 25px;
+  box-sizing: border-box;
+  font-size: 24px;
+  text-align: center;
+  color: #2a2e35;
+  cursor: pointer;
+}
+.nav_li span {
+  vertical-align: text-top;
+  margin-left: 5px;
+  transform: translate(0px);
+  transition: all 0.5s;
+  display: inline-block;
+}
+.nav_li:hover {
+  color: #134aa9;
+}
+.nav_li:hover span {
+  /* padding-left: 15px; */
+  /* color: #134aa9; */
+  transform: translate(10px);
+}
+/* ////////////////////////////////////////// */
+.education {
+  width: 100%;
+  background: #134aa9;
+  margin-top: 20px;
+  color: #fff;
+}
+.edu_tit {
+  width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.edu_plus {
+  text-align: right;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0;
+}
+.edu_calendar {
+  width: 100%;
+  height: 70px;
+  opacity: 0.7;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cad_month {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  float: left;
+}
+.month_arrow {
+  font-size: 15px;
+  margin: 4px;
+  cursor: pointer;
+}
+.month_num {
+  font-family: "GmarketSansBold";
+  font-size: 38px;
+}
+.year_num {
+  margin-top: -9px;
+  font-size: 15px;
+}
+.cad_num {
+  height: 100%;
+  margin-left: 15px;
+  display: flex;
+  float: left;
+  align-items: center;
+  justify-content: space-around;
+}
+.cad_day {
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  display: inline-block;
+  padding: 10px;
+  text-decoration: underline;
+  font-size: 19px;
+  cursor: pointer;
+}
+.today_ac {
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.edu_slide_sec {
+  width: 100%;
+  height: 650px;
+  padding: 70px 0;
+  margin-top: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.edu_slide_inner {
+  width: 1690px;
+  height: 550px;
+  position: absolute;
+  top: 70px;
+  /* left: 50%;
+  transform: translate(-50%); */
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.edu_slide_box {
+  width: 308px;
+  height: 100%;
+  overflow: hidden;
+  padding: 0 15px 15px;
+  background: palegoldenrod;
+  transition: all 0.5s;
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.edu_sl_img {
+  width: 100%;
+  height: 436px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.sl_desc {
+  margin-top: 10px;
+}
+.sl_desc1 span {
+  color: #00aceb;
+  font-size: 15px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+.sl_desc1 {
+  margin: 0;
+}
+.sl_desc2 {
+  font-size: 19px;
+  font-weight: 900;
+}
+
+.edu_box_ac {
+  transform: translateX(-308px);
+}

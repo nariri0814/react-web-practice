@@ -1,0 +1,39 @@
+.sns {
+  width: 100%;
+  overflow: hidden;
+  background: #eff4fe;
+  padding: 50px 0 100px;
+}
+.sns_tit h1 {
+  margin: 0;
+  font-family: "GmarketSansBold";
+}
+.sns_tit p {
+  margin: 0;
+  font-size: 17px;
+}
+.sns_desc_sec {
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.sns_more {
+  margin-left: 80px;
+}
+.sns_slide {
+  width: 600px;
+  height: 180px;
+  overflow: hidden;
+  background: chartreuse;
+}
+.sns_slide_box {
+  width: calc((100% - 120px) / 3);
+  margin: 10px 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  font-size: 0;
+  float: left;
+}

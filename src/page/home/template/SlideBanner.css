@@ -1,0 +1,71 @@
+.main_slide_sec {
+  font-family: "GmarketSansMedium";
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 700px;
+  padding-bottom: 90px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+.main_slide_box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #134aa9;
+}
+.main_slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  opacity: 0;
+  transition: all 0.5s;
+}
+.slide_txt {
+  width: 50%;
+  position: absolute;
+  z-index: 9;
+}
+.s_txt1 {
+  font-size: 29px;
+  margin: 0;
+}
+.s_txt2 {
+  font-size: 76px;
+  margin: 0;
+}
+.main_slide img {
+  width: 50%;
+  position: absolute;
+  right: 0;
+}
+.indi_box {
+  font-family: "Noto Sans KR", sans-serif;
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+}
+.indi_box * {
+  float: left;
+  color: #134aa9;
+}
+.indi_line {
+  width: 80px;
+  height: 3px;
+  background: #134aa9;
+  margin: 14px 10px;
+
+  display: none;
+}
+.indi_num {
+  opacity: 0.4;
+  padding: 0 10px;
+  cursor: pointer;
+}
