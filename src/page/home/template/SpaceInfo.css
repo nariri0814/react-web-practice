@@ -2,6 +2,7 @@
   width: 100%;
   padding: 140px 0;
   position: relative;
+  overflow: hidden;
 }
 .space_tit_L {
   float: left;
@@ -54,9 +55,9 @@
 
 .our_space img {
   width: auto;
-  height: 100%;
+  height: 80%;
   position: absolute;
-  top: 0;
+  top: 50%;
   right: 100px;
-  vertical-align: bottom;
+  transform: translateY(-50%);
 }

@@ -76,7 +76,6 @@ const Gnb = () => {
             </li>
         </ul>
         </div>
-        <div className="gnb_hov_box" onMouseEnter={gnb_hov_enter} onMouseLeave={gnb_hov_leave}></div>
     </div>
   )
 }

@@ -20,20 +20,28 @@
   align-items: center;
   flex-direction: row;
 }
-.sns_more {
+.sns_desc_sec .space_more {
   margin-left: 80px;
 }
-.sns_slide {
-  width: 600px;
-  height: 180px;
+.sns_slide_wrap {
+  width: 800px;
   overflow: hidden;
   background: chartreuse;
 }
+.sns_slide {
+  /* width: 2430px; */
+  overflow: hidden;
+}
 .sns_slide_box {
-  width: calc((100% - 120px) / 3);
+  width: 230px;
+  height: 230px;
   margin: 10px 20px;
   border-radius: 20px;
   overflow: hidden;
   font-size: 0;
   float: left;
+}
+.sns_slide_box img {
+  width: 100%;
+  height: 100%;
 }

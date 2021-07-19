@@ -14,7 +14,8 @@ const NewInfo = () => {
                             align="left"
                             color="#222"
                             description=""
-                            title="새로운 소식"
+                            title1="새로운 소식"
+                            title2=""
                         />
                     </div>
                     <div className="new_desc_sec">

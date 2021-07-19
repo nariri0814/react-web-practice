@@ -14,7 +14,8 @@ const Culture = () => {
                         align="left"
                         color="#222"
                         description="나와 꼭 맞는 생활문화를 검색해 보세요"
-                        title="나와 꼭 맞는 생활 문화"
+                        title1="나와 꼭 맞는 생활 문화"
+                        title2=""
                     />
                 </div>
                 <div className="cul_opt_sec">

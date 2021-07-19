@@ -75,12 +75,12 @@ const SpaceInfo = () => {
                             align="left"
                             color="#222"
                             description="경기생활문화센터에서 운영하는 공간을 둘러보세요."
-                            title="경기생활문화센터 공간소개"
+                            title1="경기생활문화센터"
+                            title2="공간소개"
                         />
                     </div>
                     <div className="space_tit_R">
                         <MoreBtn/>
-                        {/* <div className="space_more">MORE</div> */}
                     </div>
                 </div>
                 <div className="space_main_sec">
@@ -160,13 +160,13 @@ const SpaceInfo = () => {
                     align="left"
                     color="#222"
                     description="내가 사는 지역 생활문화공간 바로 찾기"
-                    title="우리지역 생활문화공간을 찾아보세요"
+                    title1="우리지역"
+                    title2="생활문화공간을 찾아보세요"
                 />
             </div>
             <img src="../img/our-center-img.svg" alt="our_space"/>
             <div className="space_tit_R">
                 <MoreBtn/>
-                {/* <div className="space_more">MORE</div> */}
             </div>
         </div>
         </SectionContainer>
