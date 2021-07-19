@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import SpaceBtn from '../../../components/button/SpaceBtn';
 import MoreBtn from '../../../components/button/MoreBtn';
+import SpaceBtn from '../../../components/button/SpaceBtn';
 import SectionHeader from '../../../components/text/SectionHeader';
 import './SpaceInfo.css';
 import SectionContainer from '../../../layout/SectionContainer';

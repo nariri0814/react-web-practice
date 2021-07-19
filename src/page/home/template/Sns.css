@@ -25,12 +25,16 @@
 }
 .sns_slide_wrap {
   width: 800px;
+  height: 250px;
+  padding: 30px 0;
   overflow: hidden;
-  background: chartreuse;
+  position: relative;
 }
 .sns_slide {
-  /* width: 2430px; */
-  overflow: hidden;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  transition: all 0.6s;
 }
 .sns_slide_box {
   width: 230px;
@@ -40,6 +44,10 @@
   overflow: hidden;
   font-size: 0;
   float: left;
+}
+.sns_slide_box:hover {
+  transform: translateY(-30px);
+  transition: all 0.4s;
 }
 .sns_slide_box img {
   width: 100%;

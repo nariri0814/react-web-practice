@@ -10,10 +10,6 @@ import './Sns.css';
 
 const Sns = () => {
 
-    
-
-
-
     return (
         <div className="sns">
             <SectionContainer>

@@ -48,20 +48,34 @@
 .opt_arrow {
   float: right;
 }
-.cul_desc_sec {
+.culture_slide_wrap {
   width: 100%;
+  height: 900px;
   overflow: hidden;
-  margin-top: 30px;
-  padding-bottom: 150px;
   position: relative;
 }
+.cul_desc_sec {
+  /* width: 100%; */
+  width: 4200px;
+  height: 560px;
+  overflow: hidden;
+  margin-top: 30px;
+  margin-bottom: 150px;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  left: -1392px;
+  transition: all 0.3s;
+}
 .cul_desc_box {
-  width: calc((100% - 120px) / 3);
+  width: 308px;
   margin: 20px;
   float: left;
 }
 .cul_desc_img {
   width: 100%;
+  height: 440px;
   border-radius: 20px;
   overflow: hidden;
 }

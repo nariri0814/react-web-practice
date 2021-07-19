@@ -1,11 +1,61 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { RiArrowDropDownFill } from "react-icons/ri";
-import { BsGeoAlt, BsTable } from "react-icons/bs";
+
 import SectionHeader from '../../../components/text/SectionHeader';
-import './Culture.css';
 import SectionContainer from '../../../layout/SectionContainer';
+import CultureSlide from '../../../components/slide/CultureSlide';
+import './Culture.css';
+
+
 
 const Culture = () => {
+    let culDescSec;
+    let culDescBox;
+    let culLeft = 0;
+    useEffect(() => {
+        const culImg1 = document.querySelectorAll('.cul_img1');
+        const culImg2 = document.querySelectorAll('.cul_img2');
+        const culImg3 = document.querySelectorAll('.cul_img3');
+        const culImg4 = document.querySelectorAll('.cul_img4');
+
+
+        for(let i=0; i<culImg1.length; i++) {
+            culImg1[i].style.background = 'url(./img/pcFile_1625632151_0.png) no-repeat center / cover';
+        }
+        for(let i=0; i<culImg2.length; i++) {
+            culImg2[i].style.background = 'url(./img/pcFile_1625632746_0.jpg) no-repeat center / cover';
+        }
+        for(let i=0; i<culImg3.length; i++) {
+            culImg3[i].style.background = 'url(./img/pcFile_1625648663_0.jpg) no-repeat center / cover';
+        }
+        for(let i=0; i<culImg4.length; i++) {
+            culImg4[i].style.background = 'url(./img/pcFile_1625799571_0.jpg) no-repeat center / cover';
+        }
+
+
+        culDescSec = document.querySelector('.cul_desc_sec');
+        culDescBox = document.getElementsByClassName('cul_desc_box')[0].clientWidth + 40;
+
+        culLeft = culDescBox * 5
+        
+        
+    }, [])
+    function onClickL() {
+            
+        culDescSec.style.left = -culLeft + 'px';
+
+        culLeft -= culDescBox
+        console.log(culLeft)
+
+    }
+    function onClickR() {
+        culDescSec.style.left = +culLeft + 'px';
+
+        culLeft += culDescBox
+        console.log(culLeft)
+    }
+    
+
     return (
         <SectionContainer>
             <div className="culture">
@@ -19,7 +69,7 @@ const Culture = () => {
                     />
                 </div>
                 <div className="cul_opt_sec">
-                    <div className="cul_arrow cul_arrow_R">
+                    <div className="cul_arrow cul_arrow_R" onClick={onClickL}>
                         <img src="./img/arrow_left.svg" alt="arrow"/>
                     </div>
                     <div className="cul_opt_box">
@@ -32,40 +82,16 @@ const Culture = () => {
                             <div className="opt_arrow"><RiArrowDropDownFill/></div>
                         </div>
                     </div>
-                    <div className="cul_arrow cul_arrow_L">
-                    <img src="./img/arrow_right.svg" alt="arrow"/>
+                    <div className="cul_arrow cul_arrow_L" onClick={onClickR}>
+                        <img src="./img/arrow_right.svg" alt="arrow"/>
                     </div>
                 </div>
-                <div className="cul_desc_sec">
-                    <div className="cul_desc_box">
-                        <div className="cul_desc_img">
-                            <img src="./img/pcFile_1625632151_0.png" alt="culture_img"/>
-                        </div>
-                        <div className="cul_desc_txt">
-                            <h4><span className="txt_ing">진행중</span>화성인의 밥상: 홈 브런치</h4>
-                            <p><span><BsGeoAlt/></span>화성시생활문화센터</p>
-                            <p><span><BsTable/></span>2021.6.23 ~ 2021.07.13</p>
-                        </div>
-                    </div>
-                    <div className="cul_desc_box">
-                        <div className="cul_desc_img">
-                            <img src="./img/pcFile_1625632151_0.png" alt="culture_img"/>
-                        </div>
-                        <div className="cul_desc_txt">
-                            <h4><span className="txt_ing">진행중</span>화성인의 밥상: 홈 브런치</h4>
-                            <p><span><BsGeoAlt/></span>화성시생활문화센터</p>
-                            <p><span><BsTable/></span>2021.6.23 ~ 2021.07.13</p>
-                        </div>
-                    </div>
-                    <div className="cul_desc_box">
-                        <div className="cul_desc_img">
-                            <img src="./img/pcFile_1625632151_0.png" alt="culture_img"/>
-                        </div>
-                        <div className="cul_desc_txt">
-                            <h4><span className="txt_ing">진행중</span>화성인의 밥상: 홈 브런치</h4>
-                            <p><span><BsGeoAlt/></span>화성시생활문화센터</p>
-                            <p><span><BsTable/></span>2021.6.23 ~ 2021.07.13</p>
-                        </div>
+                
+                <div className="culture_slide_wrap">
+                    <div className="cul_desc_sec">
+                        <CultureSlide/>
+                        <CultureSlide/>
+                        <CultureSlide/>
                     </div>
                     <div className="cul_more_btn">더보기</div>
                 </div>

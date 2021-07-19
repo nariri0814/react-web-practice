@@ -3,14 +3,20 @@ import React,{ useEffect } from 'react';
 const SnsSlide = () => {
   useEffect(() => {
 
-    const SnsSlideWidth = document.querySelector('.sns_slide');
+    const SnsSlide = document.querySelector('.sns_slide');
     const SnsItemWidth = document.querySelector('.sns_slide_box').clientWidth + 40;
     const SnsItemLength = document.querySelectorAll('.sns_slide_box').length;
-    // console.log('SnsItemWidth : '+SnsItemWidth)
-    // console.log('SnsItemLength : '+SnsItemLength)
 
-    SnsSlideWidth.style.width = SnsItemWidth * SnsItemLength + 'px';
+    SnsSlide.style.width = SnsItemWidth * SnsItemLength + 'px';
+    let snsLeft = 0;
 
+    setInterval(() => {
+      SnsSlide.style.left = - snsLeft + 'px';
+      snsLeft += SnsItemWidth;
+      if (snsLeft === SnsItemWidth * (SnsItemLength - 2)) {
+        snsLeft = 0;
+      }
+    }, 1500);
 
   }, [])
 
