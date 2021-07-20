@@ -52,7 +52,6 @@ const Education = () => {
         }
 
         setInterval(() => {
-            // edu_item_slide()
             if(edu_curr_i < edu_count - 5) {
                 edu_item_slide(edu_curr_i + 1);
             } else {

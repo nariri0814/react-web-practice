@@ -173,4 +173,4 @@ const SpaceInfo = () => {
     )
 }
 
-export default SpaceInfo
+export default SpaceInfo;

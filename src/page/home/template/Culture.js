@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { RiArrowDropDownFill } from "react-icons/ri";
 
 import SectionHeader from '../../../components/text/SectionHeader';
@@ -11,7 +11,10 @@ import './Culture.css';
 const Culture = () => {
     let culDescSec;
     let culDescBox;
-    let culLeft = 0;
+    let culDescBoxWidth;
+    let culIndex = 0;
+    let culPos = 0;
+
     useEffect(() => {
         const culImg1 = document.querySelectorAll('.cul_img1');
         const culImg2 = document.querySelectorAll('.cul_img2');
@@ -34,28 +37,32 @@ const Culture = () => {
 
 
         culDescSec = document.querySelector('.cul_desc_sec');
-        culDescBox = document.getElementsByClassName('cul_desc_box')[0].clientWidth + 40;
+        culDescBox = document.getElementsByClassName('cul_desc_box');
+        culDescBoxWidth = culDescBox[0].clientWidth + 40;
+        // culDescSec.style.left = -culDescBox * culIndex + 'px'
 
-        culLeft = culDescBox * 5
-        
+        culPos = culDescBoxWidth;
         
     }, [])
+
     function onClickL() {
-            
-        culDescSec.style.left = -culLeft + 'px';
-
-        culLeft -= culDescBox
-        console.log(culLeft)
-
+        culIndex ++;
+        culDescSec.style.left = -(culPos * culIndex) + 'px';
+        
+        console.log(culDescSec.style.left)
+        console.log(culIndex)
     }
-    function onClickR() {
-        culDescSec.style.left = +culLeft + 'px';
 
-        culLeft += culDescBox
-        console.log(culLeft)
+    function onClickR() {
+        
+        culDescSec.style.left = +(culPos * culIndex) + 'px';
+        culIndex --;
+
+        console.log(culDescSec.style.left)
+        console.log(culIndex)
+        
     }
     
-
     return (
         <SectionContainer>
             <div className="culture">

@@ -65,13 +65,16 @@
   flex-direction: row;
   position: absolute;
   top: 0;
-  left: -1392px;
+  left: 50%;
+  transform: translateX(-50%);
   transition: all 0.3s;
 }
 .cul_desc_box {
   width: 308px;
+  height: 100%;
   margin: 20px;
   float: left;
+  transition: all 0.3s;
 }
 .cul_desc_img {
   width: 100%;
