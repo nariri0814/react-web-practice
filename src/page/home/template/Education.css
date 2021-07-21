@@ -119,22 +119,19 @@
   position: relative;
 }
 .edu_slide_inner {
-  width: 1690px;
-  height: 550px;
+  height: 520px;
   position: absolute;
   top: 70px;
-  /* left: 50%;
-  transform: translate(-50%); */
+  left: 0;
   overflow: hidden;
-  transition: all 0.3s;
+  transition: all 1.3s;
 }
 .edu_slide_box {
   width: 308px;
   height: 100%;
   overflow: hidden;
   padding: 0 15px 15px;
-  background: palegoldenrod;
-  transition: all 0.5s;
+  margin: 0 10px;
   float: left;
   position: absolute;
   top: 0;
@@ -159,8 +156,9 @@
   margin: 0;
 }
 .sl_desc2 {
-  font-size: 19px;
+  font-size: 22px;
   font-weight: 900;
+  margin-top: 12px;
 }
 
 .edu_box_ac {

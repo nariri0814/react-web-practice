@@ -7,13 +7,15 @@ import CultureSlide from '../../../components/slide/CultureSlide';
 import './Culture.css';
 
 
-
 const Culture = () => {
-    let culDescSec;
+    // let culDescSec;
     let culDescBox;
     let culDescBoxWidth;
-    let culIndex = 0;
-    let culPos = 0;
+    // let culIndex = 0;
+    // let culPos = 0;
+
+    // let culBoxLength = Array(3).fill().map((v,i) => i+1);
+    // let arr = Array(url.length*3).fill('');
 
     useEffect(() => {
         const culImg1 = document.querySelectorAll('.cul_img1');
@@ -36,31 +38,30 @@ const Culture = () => {
         }
 
 
-        culDescSec = document.querySelector('.cul_desc_sec');
+        // culDescSec = document.querySelector('.cul_desc_sec');
         culDescBox = document.getElementsByClassName('cul_desc_box');
         culDescBoxWidth = culDescBox[0].clientWidth + 40;
-        // culDescSec.style.left = -culDescBox * culIndex + 'px'
-
-        culPos = culDescBoxWidth;
+        // // culDescSec.style.left = -culDescBox * culIndex + 'px'
+        // culPos = culDescBoxWidth;
         
     }, [])
 
     function onClickL() {
-        culIndex ++;
-        culDescSec.style.left = -(culPos * culIndex) + 'px';
+        // culIndex ++;
+        // culDescSec.style.left = -(culPos * culIndex) + 'px';
         
-        console.log(culDescSec.style.left)
-        console.log(culIndex)
+        Array(culDescBox.length).fill().map((v,i) => 
+            culDescBox[i].style.left === 
+            -(culDescBoxWidth)+'px' ? 
+            culDescBox[i].style.transition='none' :
+            culDescBox[i].style.transition='left 1s');
+        
     }
 
     function onClickR() {
-        
-        culDescSec.style.left = +(culPos * culIndex) + 'px';
-        culIndex --;
+        // culDescSec.style.left = +(culPos * culIndex) + 'px';
+        // culIndex --;
 
-        console.log(culDescSec.style.left)
-        console.log(culIndex)
-        
     }
     
     return (

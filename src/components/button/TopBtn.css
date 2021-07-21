@@ -1,14 +1,28 @@
 .top_btn {
   width: 50px;
   height: 50px;
+
   position: fixed;
   bottom: 40px;
   right: 40px;
+  z-index: 99;
+
   background: #134aa9;
   color: #fff;
+  /* outline: none; */
+  border: none;
+
   text-align: center;
   line-height: 50px;
   font-size: 20px;
+
   border-radius: 50%;
   box-shadow: 0 0 7px 3px #ffffff82;
+
+  transition: all 0.3s;
+  opacity: 0;
+  cursor: pointer;
+}
+.top_btn_ac {
+  opacity: 1;
 }
