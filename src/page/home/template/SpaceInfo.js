@@ -9,62 +9,54 @@ import SectionContainer from '../../../layout/SectionContainer';
 const SpaceImages = [
     {
         id: '1',
-        imgSrc: "../img/space_01.png"
+        imgSrc: "./img/space_01.png"
     },
     {
         id: '2',
-        imgSrc: "../img/space_02.png",
+        imgSrc: "./img/space_02.png",
     },
     {
         id: '3',
-        imgSrc: "../img/space_03.png",
+        imgSrc: "./img/space_03.png",
     },
     {
         id: '4',
-        imgSrc: "../img/space_04.png",
+        imgSrc: "./img/space_04.png",
     },
     {
         id: '5',
-        imgSrc: "../img/space_05.png",
+        imgSrc: "./img/space_05.png",
     },
     {
         id: '6',
-        imgSrc: "../img/space_06.png",
+        imgSrc: "./img/space_06.png",
     },
     {
         id: '7',
-        imgSrc: "../img/space_07.png",
+        imgSrc: "./img/space_07.png",
     },
     {
         id: '8',
-        imgSrc: "../img/space_08.png",
+        imgSrc: "./img/space_08.png",
     },
     {
         id: '9',
-        imgSrc: "../img/space_09.png",
+        imgSrc: "./img/space_09.png",
     },
     {
         id: '10',
-        imgSrc: "../img/space_10.png",
+        imgSrc: "./img/space_10.png",
     }
 ]
 
 const SpaceInfo = () => {
     const [ spaceId, setSpaceId ] = useState("1")
     const [ spaceInfo, setSpaceInfo ] = useState(SpaceImages[0])
-    
-//    console.log('spaceId:'+spaceId+', spaceInfo:'+spaceInfo.imgSrc)
-//    console.log(SpaceImages[spaceId-1].imgSrc)
-
 
     const onClickBtn = (id) => {
-        // console.log(id)
         setSpaceId(id)
-
         const filteredItem = SpaceImages.find(item => item.id === id );
-
         setSpaceInfo(filteredItem || SpaceImages[0])
-        // console.log(spaceInfo)
     }
     return (
         <SectionContainer>
@@ -146,10 +138,6 @@ const SpaceInfo = () => {
 
 
                     <div className="space_img_sec">
-                    {/* {SpaceImages.map(item => {
-
-                    })} */}
-                        {/* <img src={SpaceImages[spaceId-1].imgSrc} alt="space"/> */}
                         <img src={spaceInfo.imgSrc} alt="space"/>
                     </div>
                 </div>
@@ -164,7 +152,7 @@ const SpaceInfo = () => {
                     title2="생활문화공간을 찾아보세요"
                 />
             </div>
-            <img src="../img/our-center-img.svg" alt="our_space"/>
+            <img src="./img/our-center-img.svg" alt="our_space"/>
             <div className="space_tit_R">
                 <MoreBtn/>
             </div>
