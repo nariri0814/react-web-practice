@@ -21,33 +21,32 @@ const SnsSlide = () => {
   return (
     <div className="sns_slide_wrap">
       <div className="sns_slide">
-          
         <div className="sns_slide_box">
-            <img src="./img/_1621848192.jpg"/>
+          <img src="./img/_1621848192.jpg" alt="sns_img"/>
         </div>
         <div className="sns_slide_box">
-            <img src="./img/_1621848243.jpg"/>
+          <img src="./img/_1621848243.jpg" alt="sns_img"/>
         </div>
         <div className="sns_slide_box">
-            <img src="./img/_1621848278.jpg"/>
+          <img src="./img/_1621848278.jpg" alt="sns_img"/>
         </div>
         <div className="sns_slide_box">
-            <img src="./img/sddefault.jpg"/>
+          <img src="./img/sddefault.jpg" alt="sns_img"/>
         </div>
         <div className="sns_slide_box">
-            <img src="./img/sddefault (1).jpg"/>
+          <img src="./img/sddefault (1).jpg" alt="sns_img"/>
         </div>
         <div className="sns_slide_box">
-            <img src="./img/sddefault (2).jpg"/>
+          <img src="./img/sddefault (2).jpg" alt="sns_img"/>
         </div>
         <div className="sns_slide_box">
-            <img src="./img/sddefault (3).jpg"/>
+          <img src="./img/sddefault (3).jpg" alt="sns_img"/>
         </div>
         <div className="sns_slide_box">
-            <img src="./img/sddefault (4).jpg"/>
+          <img src="./img/sddefault (4).jpg" alt="sns_img"/>
         </div>
         <div className="sns_slide_box">
-            <img src="./img/sddefault (5).jpg"/>
+          <img src="./img/sddefault (5).jpg" alt="sns_img"/>
         </div>
       </div>
     </div>
