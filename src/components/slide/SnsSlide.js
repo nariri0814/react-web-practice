@@ -2,7 +2,6 @@ import React,{ useEffect } from 'react';
 
 const SnsSlide = () => {
   useEffect(() => {
-
     const SnsSlide = document.querySelector('.sns_slide');
     const SnsItemWidth = document.querySelector('.sns_slide_box').clientWidth + 40;
     const SnsItemLength = document.querySelectorAll('.sns_slide_box').length;
@@ -17,7 +16,6 @@ const SnsSlide = () => {
         snsLeft = 0;
       }
     }, 1500);
-
   }, [])
 
   return (
@@ -51,7 +49,6 @@ const SnsSlide = () => {
         <div className="sns_slide_box">
             <img src="./img/sddefault (5).jpg"/>
         </div>
-
       </div>
     </div>
   )

@@ -29,17 +29,6 @@ const Education = () => {
         function edu_item_slide(num) {
             edu_sl_inner.style.left =  -num * edu_box_width + 'px'
             edu_curr_i = num;
-
-            // edu_sl_box[edu_curr_i % edu_count<0 ? 
-            //     edu_curr_i % edu_count + edu_count :
-            //     edu_curr_i % edu_count].style.transform = `translate(-${edu_box_width}px)`;
-
-            // edu_sl_box_all.forEach(element => {
-            //     // console.log(element)
-            //     element.style.transform = `translate(-${edu_box_width}px)`
-            // });
-            // edu_curr_i++;
-            
         }
 
         setInterval(() => {

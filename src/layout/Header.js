@@ -8,7 +8,6 @@ import './Header.css';
 const Header = () => {
     function gnb_hov_enter() {
         const hov_box = document.querySelector('.gnb_hov_box');
-        
         hov_box.classList.add('gnb_hov_box_ac');
     }
     function gnb_hov_leave() {
@@ -21,7 +20,6 @@ const Header = () => {
             <SectionContainer>
                 <Logo/>
                 <Gnb/>
-                
                 <div className="top_menu">
                     <ul>
                         <li className="top_li">

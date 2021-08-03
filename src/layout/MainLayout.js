@@ -8,7 +8,6 @@ const MainLayout = ({children}) => {
         <>
             <TopBtn/>
             <Header/>
-
             {children}
             <Footer/>
         </>

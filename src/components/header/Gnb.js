@@ -1,16 +1,12 @@
-import React from 'react'
-
-
+import React from 'react';
 
 const Gnb = () => {
   function gnb_hov_enter() {
     const hov_box = document.querySelector('.gnb_hov_box');
-    
     hov_box.classList.add('gnb_hov_box_ac');
   }
   function gnb_hov_leave() {
     const hov_box = document.querySelector('.gnb_hov_box');
-
     hov_box.classList.remove('gnb_hov_box_ac');
   }
 

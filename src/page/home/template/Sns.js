@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import MoreBtn from '../../../components/button/MoreBtn';
 import SectionContainer from '../../../layout/SectionContainer';

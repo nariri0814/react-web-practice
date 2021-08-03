@@ -5,9 +5,7 @@ import './Main.css'
 
 function Main() {
     return (
-        <MainLayout>
-            
-        </MainLayout>
+        <MainLayout/>
     )
 }
 

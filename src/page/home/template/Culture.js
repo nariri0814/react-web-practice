@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { RiArrowDropDownFill } from "react-icons/ri";
 
 import SectionHeader from '../../../components/text/SectionHeader';
@@ -8,14 +8,8 @@ import './Culture.css';
 
 
 const Culture = () => {
-    // let culDescSec;
     let culDescBox;
     let culDescBoxWidth;
-    // let culIndex = 0;
-    // let culPos = 0;
-
-    // let culBoxLength = Array(3).fill().map((v,i) => i+1);
-    // let arr = Array(url.length*3).fill('');
 
     useEffect(() => {
         const culImg1 = document.querySelectorAll('.cul_img1');
@@ -37,19 +31,11 @@ const Culture = () => {
             culImg4[i].style.background = 'url(./img/pcFile_1625799571_0.jpg) no-repeat center / cover';
         }
 
-
-        // culDescSec = document.querySelector('.cul_desc_sec');
         culDescBox = document.getElementsByClassName('cul_desc_box');
         culDescBoxWidth = culDescBox[0].clientWidth + 40;
-        // // culDescSec.style.left = -culDescBox * culIndex + 'px'
-        // culPos = culDescBoxWidth;
-        
     }, [])
 
     function onClickL() {
-        // culIndex ++;
-        // culDescSec.style.left = -(culPos * culIndex) + 'px';
-        
         Array(culDescBox.length).fill().map((v,i) => 
             culDescBox[i].style.left === 
             -(culDescBoxWidth)+'px' ? 

@@ -2,7 +2,6 @@ import React from 'react'
 import './SectionHeader.css'
 
 const SectionHeader = ({color,align,title1,title2,description}) => {
-  
   return (
     <div 
       style={{

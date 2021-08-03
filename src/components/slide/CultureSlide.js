@@ -1,19 +1,9 @@
-import React,{ useEffect } from 'react';
+import React from 'react';
 import { BsGeoAlt, BsTable } from "react-icons/bs";
 
 
 
 const CultureSlide = () => {
-  // useEffect(() => {
-  //   document.querySelector('.cul_img1').style.background = 'url(./img/pcFile_1625632151_0.png) no-repeat center / cover';
-  //   document.querySelector('.cul_img2').style.background = 'url(./img/pcFile_1625632746_0.jpg) no-repeat center / cover';
-  //   document.querySelector('.cul_img3').style.background = 'url(./img/pcFile_1625648663_0.jpg) no-repeat center / cover';
-  //   document.querySelector('.cul_img4').style.background = 'url(./img/pcFile_1625799571_0.jpg) no-repeat center / cover';
-    
-  // }, [])
-
-  
-
   return (
     <>
       <div className="cul_desc_box">
@@ -48,7 +38,6 @@ const CultureSlide = () => {
             <p><span><BsTable/></span>2021.6.23 ~ 2021.07.13</p>
         </div>
       </div>
-      
   </>
   )
 }

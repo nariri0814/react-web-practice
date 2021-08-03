@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import './SlideBanner.css'
 
 const SlideBanner = () => {
-    // const [ state, setState ] = useState(null);
 
     useEffect ( () => {
         // const slide = document.querySelectorAll('.main_slide');
@@ -60,7 +59,6 @@ const SlideBanner = () => {
         }
         Slide()
     },[]);
-    
 
     return (
         <div>
